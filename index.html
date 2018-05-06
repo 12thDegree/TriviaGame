@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Guess Not!</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Josefin+Sans" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+<!-- why are the spanumns not working right? each set of spanumns adds to 12, but there's all kinds of weird crap going on. 
+    The image isn't centred, but it should be, and so should the ... something a bout Columns stack on purpose, also the responsive part. might be better with col-lg instead of -md.
+    Spans vs. Columns -->
+<div class="container">
+    <div class="jumbotron">
+        <h1>It's a Chaotic Triva Game!</h1>
+    </div>
+        <row>
+            <div class="span-md-5"></div>
+            <div class="span-md-2">
+                <button type="button" class="btn start">Start</button>
+            </div>
+            <div class="span-md-5"></div>
+        </row>
+        <row>
+            <div class="span-md-12">
+                <h2><div id="time-holder"></div></h2>
+            </div>
+        </row>
+         <row>
+            <div class="span-md-12">
+                <h2><div id="question-holder"></div></h2>
+                <h2><div id="answer-holder"></div></h2>
+            </div>
+        </row>
+        <row>
+            <div class="span-md-4"></div>
+            <div class="span-md-4">
+                <h2><div id="image-holder"></div></h2>
+            </div>
+            <div class="span-md-4"></div>
+        </row>
+        <row>
+            <div class="span-md-12">
+                <h2><div id="choice-holder-1"></div></h2>
+            </div>
+            <div class="span-md-4"></div>
+            <div class="span-md-4">
+                <h2><div id="correct-holder"></div></h2>
+            </div>
+            <div class="span-md-4"></div>
+        <row>
+            <div class="span-md-12">
+                <h2><div id="choice-holder-2"></div></h2>
+            </div>
+            <div class="span-md-4"></div>
+            <div class="span-md-4">
+                <h2><div id="incorrect-holder"></div></h2>
+            </div>
+            <div class="span-md-4"></div>
+        </row>
+        <row>
+            <div class="span-md-12">
+                <h2><div id="choice-holder-3"></div></h2>
+            </div>
+            <div class="span-md-4"></div>
+            <div class="span-md-4">
+                <h2><div id="unanswered-holder"></div></h2>
+            </div>
+            <div class="span-md-4"></div>
+        </row>
+        <row>
+            <div class="span-md-12">
+                <h2><div id="choice-holder-4"></div></h2>
+            </div>
+            <div class="span-md-2"></div>
+            <div class="span-md-8">
+                <h2><div id="restart-holder"></div></h2>
+            </div>
+            <div class="span-md-2"></div>
+        </row>
+</div>
+<!-- Link to JS ... why does this go here?-->
+<script src="assets/javascript/app.js"></script>
+</body>
+</html>
